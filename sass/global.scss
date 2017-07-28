@@ -373,8 +373,14 @@ i, cite, em, var, address, dfn {
 .bg-1{
 	background-color: $color_1;
 }
+.bg-2{
+	background-color: $color_2;
+}
 .bgwhite{
 	background-color: $white;
+}
+.font__color-white{
+	color: $white;
 }
 .colorwhite{
 	color: $white !important;

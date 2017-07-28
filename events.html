@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Trainer - Busines Training, Coaching &amp; Corporate HTML Template</title>
-    <meta name="description" content="Trainer - Busines Training, Coaching & Corporate HTML Template. It is built using bootstrap 3.3.2 framework, works totally responsive, easy to customise, well commented codes and seo friendly.">
-    <meta name="keywords" content="coach, coaching, corporate, learning, marketer, marketing, personal, personal coach, personal development, personal mentor, personal trainer, success, therapist, trainer">
+    <title>Trainer - Trainer, Mentor, Coach HTML Template</title>
+    <meta name="description" content="Trainer - Trainer, Mentor, Coach HTML Template. It is built using bootstrap 3.3.2 framework, works totally responsive, easy to customise, well commented codes and seo friendly.">
+    <meta name="keywords" content="coach, mentor, corporate, learning, marketer, marketing, personal coach, personal development, personal mentor, personal trainer, success, therapist, trainer">
     <meta name="author" content="rudhisasmito.com"> 
 	
 	<!-- ==============================================
@@ -27,6 +27,8 @@
 	<link rel="stylesheet" type="text/css" href="css/vendor/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="css/vendor/owl.theme.default.min.css">
 	<link rel="stylesheet" type="text/css" href="css/vendor/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor/bootstrap-dropdownhover.min.css">
 	
 	<!-- ==============================================
 	Custom Stylesheet
@@ -109,36 +111,49 @@
 						<img src="images/logo.png" alt="" />
 					</a>
 
-					<nav class="navbar-collapse collapse">
+					<nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-hover="dropdown" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft">
 						<ul class="nav navbar-nav">
 							<li class="dropdown">
 							  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HOME <span class="caret"></span></a>
 							  <ul class="dropdown-menu">
-								<li><a href="index.html">HOMEPAGE 1</a></li>
-								<li><a href="index-2.html">HOMEPAGE 2</a></li>
-								<li><a href="index-3.html">HOMEPAGE 3</a></li>
+								<li><a href="index.html">Homepage 1</a></li>
+								<li><a href="index-2.html">Homepage 2</a></li>
+								<li><a href="index-3.html">Homepage 3</a></li>
 							  </ul>
 							</li>
 							<li><a href="about.html">ABOUT</a></li>
-							<li><a href="services.html">SERVICES</a></li>
-							
-							<li><a href="events.html">EVENTS</a></li>
+							<li class="dropdown">
+							  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES <span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+								<li><a href="services.html">Services 1</a></li>
+								<li><a href="services-2.html">Services 2</a></li>
+								<li><a href="services-detail.html">Services Detail</a></li>
+							  </ul>
+							</li>
+							<li class="dropdown">
+							  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EVENTS <span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+								<li><a href="events.html">Events 1</a></li>
+								<li><a href="events-2.html">Events 2</a></li>
+								<li><a href="events-3.html">Events 3</a></li>
+								<li><a href="events-detail.html">Events Detail</a></li>
+							  </ul>
+							</li>
 							<li><a href="stories.html">STORIES</a></li>
 							<li class="dropdown">
 							  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NEWS <span class="caret"></span></a>
 							  <ul class="dropdown-menu">
-								<li><a href="news-grid.html">GRID BAR</a></li>
-								<li><a href="news-sidebar.html">SIDEBAR</a></li>
-								<li><a href="news-detail.html">SINGLE NEWS</a></li>
+								<li><a href="news-grid.html">Grid Bar</a></li>
+								<li><a href="news-sidebar.html">Sidebar</a></li>
+								<li><a href="news-detail.html">News Detail</a></li>
 							  </ul>
 							</li>
 							<li class="dropdown">
 							  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PAGES <span class="caret"></span></a>
 							  <ul class="dropdown-menu">
-								<li><a href="faq.html">FAQ</a></li>
-								<li><a href="pricing-table.html">PRICING TABLE</a></li>
-								<li><a href="404page.html">404 PAGE</a></li>
-								<li><a href="career.html">CAREER</a></li>
+								<li><a href="faq.html">Faq</a></li>
+								<li><a href="pricing-table.html">Pricing Table</a></li>
+								<li><a href="404page.html">404 Page</a></li>
 							  </ul>
 							</li>
 							<li><a href="contact.html">CONTACT</a></li>
@@ -175,142 +190,96 @@
 	<!-- CONTENT -->
 	<div class="section section-border">
 		<div class="container">
-			<div class="row list-events">
+			<div class="row">
 				
-				<!-- Item 1 -->
-				<div class="col-sm-4 col-md-4">
-					<div class="box-event style-2">
-						<div class="media">
-							<img src="images/event-img-1.jpg" alt="rud" class="img-responsive">
-						</div>
-						<div class="meta-date">
-							<div class="month">AUG</div>
-							<div class="date">10</div>
-						</div>
-						<div class="body-content">
-							<h4><a href="events-detail.html">Hands On 3<sup>rd</sup> Regional Coaching Conference</a></h4>
-							<div class="meta">
-								<span class="location"><i class="fa fa-map-marker"></i> Montreal, Canada</span>
-								<span class="date"><i class="fa fa-clock-o"></i>  12:00 am - 5:00 pm</span>
+				<div class="col-sm-12 col-md-12">
+					<div class="list-events">
+						<div class="box-event">
+							<div class="meta-date">
+								<div class="month">AUG</div>
+								<div class="date">10</div>
+							</div>
+							<div class="body-content">
+								<h4><a href="events-detail.html">Hands On 3<sup>rd</sup> Regional Coaching Conference</a></h4>
+								<div class="meta">
+									<span class="location"><i class="fa fa-map-marker"></i> Montreal, Canada</span>
+									<span class="date"><i class="fa fa-clock-o"></i>  12:00 am - 5:00 pm</span>
+								</div>
+							</div>
+							<div class="detail-event">
+								<a href="" class="btn btn-ghost-dark">VIEW DETAIL</a>
 							</div>
 						</div>
-						<div class="detail-event">
-							<a href="" class="btn btn-ghost-dark">VIEW DETAIL</a>
+						<div class="box-event">
+							<div class="meta-date">
+								<div class="month">AUG</div>
+								<div class="date">24</div>
+							</div>
+							<div class="body-content">
+								<h4><a href="events-detail.html">The Black Life Coaches Business Strategy Summit</a></h4>
+								<div class="meta">
+									<span class="location"><i class="fa fa-map-marker"></i> London, UK</span>
+									<span class="date"><i class="fa fa-clock-o"></i>  12:00 am - 5:00 pm</span>
+								</div>
+							</div>
+							<div class="detail-event">
+								<a href="" class="btn btn-ghost-dark">VIEW DETAIL</a>
+							</div>
+						</div>
+						<div class="box-event">
+							<div class="meta-date">
+								<div class="month">SEP</div>
+								<div class="date">03</div>
+							</div>
+							<div class="body-content">
+								<h4><a href="events-detail.html">14th Annual Executive Coaching Conference</a></h4>
+								<div class="meta">
+									<span class="location"><i class="fa fa-map-marker"></i> Cincinnati, Ohio, USA</span>
+									<span class="date"><i class="fa fa-clock-o"></i>  12:00 am - 5:00 pm</span>
+								</div>
+							</div>
+							<div class="detail-event">
+								<a href="" class="btn btn-ghost-dark">VIEW DETAIL</a>
+							</div>
+						</div>
+						<div class="box-event">
+							<div class="meta-date">
+								<div class="month">SEP</div>
+								<div class="date">20</div>
+							</div>
+							<div class="body-content">
+								<h4><a href="events-detail.html">NLP International Conference</a></h4>
+								<div class="meta">
+									<span class="location"><i class="fa fa-map-marker"></i> Birmingham, UK</span>
+									<span class="date"><i class="fa fa-clock-o"></i>  12:00 am - 5:00 pm</span>
+								</div>
+							</div>
+							<div class="detail-event">
+								<a href="" class="btn btn-ghost-dark">VIEW DETAIL</a>
+							</div>
+						</div>
+						<div class="box-event">
+							<div class="meta-date">
+								<div class="month">OCT</div>
+								<div class="date">02</div>
+							</div>
+							<div class="body-content">
+								<h4><a href="events-detail.html">7th Annual Coaching at Work Conference 2017</a></h4>
+								<div class="meta">
+									<span class="location"><i class="fa fa-map-marker"></i> Toronto, Canada</span>
+									<span class="date"><i class="fa fa-clock-o"></i>  12:00 am - 5:00 pm</span>
+								</div>
+							</div>
+							<div class="detail-event">
+								<a href="" class="btn btn-ghost-dark">VIEW DETAIL</a>
+							</div>
 						</div>
 					</div>
-				</div>
-
-				<!-- Item 2 -->
-				<div class="col-sm-4 col-md-4">
-					<div class="box-event style-2">
-						<div class="media">
-							<img src="images/event-img-2.jpg" alt="rud" class="img-responsive">
-						</div>
-						<div class="meta-date">
-							<div class="month">AUG</div>
-							<div class="date">24</div>
-						</div>
-						<div class="body-content">
-							<h4><a href="events-detail.html">The Black Life Coaches Business Strategy Summit</a></h4>
-							<div class="meta">
-								<span class="location"><i class="fa fa-map-marker"></i> London, UK</span>
-								<span class="date"><i class="fa fa-clock-o"></i>  12:00 am - 5:00 pm</span>
-							</div>
-						</div>
-						<div class="detail-event">
-							<a href="" class="btn btn-ghost-dark">VIEW DETAIL</a>
-						</div>
-					</div>
-				</div>
-
-				<!-- Item 3 -->
-				<div class="col-sm-4 col-md-4">
-					<div class="box-event style-2">
-						<div class="media">
-							<img src="images/event-img-3.jpg" alt="rud" class="img-responsive">
-						</div>
-						<div class="meta-date">
-							<div class="month">SEP</div>
-							<div class="date">03</div>
-						</div>
-						<div class="body-content">
-							<h4><a href="events-detail.html">14th Annual Executive</a></h4>
-							<div class="meta">
-								<span class="location"><i class="fa fa-map-marker"></i> Cincinnati, Ohio, USA</span>
-								<span class="date"><i class="fa fa-clock-o"></i>  12:00 am - 5:00 pm</span>
-							</div>
-						</div>
-						<div class="detail-event">
-							<a href="" class="btn btn-ghost-dark">VIEW DETAIL</a>
-						</div>
-					</div>
-				</div>
-
-				<!-- Item 4 -->
-				<div class="col-sm-4 col-md-4">
-					<div class="box-event style-2">
-						<div class="media">
-							<img src="images/event-img-4.jpg" alt="rud" class="img-responsive">
-						</div>
-						<div class="meta-date">
-							<div class="month">SEP</div>
-							<div class="date">20</div>
-						</div>
-						<div class="body-content">
-							<h4><a href="events-detail.html">NLP International Conference</a></h4>
-							<div class="meta">
-								<span class="location"><i class="fa fa-map-marker"></i> Birmingham, UK</span>
-								<span class="date"><i class="fa fa-clock-o"></i>  12:00 am - 5:00 pm</span>
-							</div>
-						</div>
-						<div class="detail-event">
-							<a href="" class="btn btn-ghost-dark">VIEW DETAIL</a>
-						</div>
-					</div>
-				</div>
-
-				<!-- Item 5 -->
-				<div class="col-sm-4 col-md-4">
-					<div class="box-event style-2">
-						<div class="media">
-							<img src="images/event-img-5.jpg" alt="rud" class="img-responsive">
-						</div>
-						<div class="meta-date">
-							<div class="month">OCT</div>
-							<div class="date">02</div>
-						</div>
-						<div class="body-content">
-							<h4><a href="events-detail.html">7th Annual Coaching at Work Conference 2017</a></h4>
-							<div class="meta">
-								<span class="location"><i class="fa fa-map-marker"></i> Toronto, Canada</span>
-								<span class="date"><i class="fa fa-clock-o"></i>  12:00 am - 5:00 pm</span>
-							</div>
-						</div>
-						<div class="detail-event">
-							<a href="" class="btn btn-ghost-dark">VIEW DETAIL</a>
-						</div>
-					</div>
-				</div>
-
-				<!-- Item 6 -->
-				<div class="col-sm-4 col-md-4">
-					<div class="box-event style-2">
-						<div class="media">
-							<img src="images/event-img-6.jpg" alt="rud" class="img-responsive">
-						</div>
-						<div class="meta-date">
-							<div class="month">OCT</div>
-							<div class="date">11</div>
-						</div>
-						<div class="body-content">
-							<h4><a href="events-detail.html">NLP International Conference</a></h4>
-							<div class="meta">
-								<span class="location"><i class="fa fa-map-marker"></i> Birmingham, UK</span>
-								<span class="date"><i class="fa fa-clock-o"></i>  12:00 am - 5:00 pm</span>
-							</div>
-						</div>
-						<div class="detail-event">
-							<a href="" class="btn btn-ghost-dark">VIEW DETAIL</a>
+					<div class="row">
+						<div class="col-sm-12 col-md-12">
+							<div class="spacer-50"></div>
+							<div class="text-center">
+							<a href="#" class="btn btn-primary" title="LEARN MORE">ALL EVENTS</a></div>
 						</div>
 					</div>
 				</div>
@@ -352,7 +321,7 @@
 						<div class="spacer-30"></div>
 						<p>99 S.t Jomblo Park <br>Pekanbaru 28292. Indonesia<br>
  <br>
-hello@trainer.co  <br>
+info@trainer.com  <br>
 +1 301-736-4321</p>
 						<div class="footer-sosmed">
 							<a href="#" title="">
@@ -439,12 +408,10 @@ hello@trainer.co  <br>
 	<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/vendor/jquery.superslides.js"></script>
 	<script type="text/javascript" src="js/vendor/owl.carousel.js"></script>
-	<script type="text/javascript" src="js/vendor/bootstrap-hover-dropdown.min.js"></script>
+	<script type="text/javascript" src="js/vendor/bootstrap-dropdownhover.min.js"></script>
 	<script type="text/javascript" src="js/vendor/jquery.magnific-popup.min.js"></script>
-	<script type="text/javascript" src="js/vendor/easings.js"></script>
-	<script type="text/javascript" src="js/vendor/isotope.pkgd.min.js"></script>
 
-	<!-- sendmail -->
+	<!-- SENDMAIL -->
 	<script type="text/javascript" src="js/vendor/validator.min.js"></script>
 	<script type="text/javascript" src="js/vendor/form-scripts.js"></script>
 	

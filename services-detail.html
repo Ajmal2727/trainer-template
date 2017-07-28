@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Trainer - Busines Training, Coaching &amp; Corporate HTML Template</title>
-    <meta name="description" content="Trainer - Busines Training, Coaching & Corporate HTML Template. It is built using bootstrap 3.3.2 framework, works totally responsive, easy to customise, well commented codes and seo friendly.">
-    <meta name="keywords" content="coach, coaching, corporate, learning, marketer, marketing, personal, personal coach, personal development, personal mentor, personal trainer, success, therapist, trainer">
+    <title>Trainer - Trainer, Mentor, Coach HTML Template</title>
+    <meta name="description" content="Trainer - Trainer, Mentor, Coach HTML Template. It is built using bootstrap 3.3.2 framework, works totally responsive, easy to customise, well commented codes and seo friendly.">
+    <meta name="keywords" content="coach, mentor, corporate, learning, marketer, marketing, personal coach, personal development, personal mentor, personal trainer, success, therapist, trainer">
     <meta name="author" content="rudhisasmito.com"> 
 	
 	<!-- ==============================================
@@ -27,6 +27,8 @@
 	<link rel="stylesheet" type="text/css" href="css/vendor/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="css/vendor/owl.theme.default.min.css">
 	<link rel="stylesheet" type="text/css" href="css/vendor/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor/bootstrap-dropdownhover.min.css">
 	
 	<!-- ==============================================
 	Custom Stylesheet
@@ -109,36 +111,49 @@
 						<img src="images/logo.png" alt="" />
 					</a>
 
-					<nav class="navbar-collapse collapse">
+					<nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-hover="dropdown" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft">
 						<ul class="nav navbar-nav">
 							<li class="dropdown">
 							  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HOME <span class="caret"></span></a>
 							  <ul class="dropdown-menu">
-								<li><a href="index.html">HOMEPAGE 1</a></li>
-								<li><a href="index-2.html">HOMEPAGE 2</a></li>
-								<li><a href="index-3.html">HOMEPAGE 3</a></li>
+								<li><a href="index.html">Homepage 1</a></li>
+								<li><a href="index-2.html">Homepage 2</a></li>
+								<li><a href="index-3.html">Homepage 3</a></li>
 							  </ul>
 							</li>
 							<li><a href="about.html">ABOUT</a></li>
-							<li><a href="services.html">SERVICES</a></li>
-							
-							<li><a href="events.html">EVENTS</a></li>
+							<li class="dropdown">
+							  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES <span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+								<li><a href="services.html">Services 1</a></li>
+								<li><a href="services-2.html">Services 2</a></li>
+								<li><a href="services-detail.html">Services Detail</a></li>
+							  </ul>
+							</li>
+							<li class="dropdown">
+							  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EVENTS <span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+								<li><a href="events.html">Events 1</a></li>
+								<li><a href="events-2.html">Events 2</a></li>
+								<li><a href="events-3.html">Events 3</a></li>
+								<li><a href="events-detail.html">Events Detail</a></li>
+							  </ul>
+							</li>
 							<li><a href="stories.html">STORIES</a></li>
 							<li class="dropdown">
 							  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NEWS <span class="caret"></span></a>
 							  <ul class="dropdown-menu">
-								<li><a href="news-grid.html">GRID BAR</a></li>
-								<li><a href="news-sidebar.html">SIDEBAR</a></li>
-								<li><a href="news-detail.html">SINGLE NEWS</a></li>
+								<li><a href="news-grid.html">Grid Bar</a></li>
+								<li><a href="news-sidebar.html">Sidebar</a></li>
+								<li><a href="news-detail.html">News Detail</a></li>
 							  </ul>
 							</li>
 							<li class="dropdown">
 							  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PAGES <span class="caret"></span></a>
 							  <ul class="dropdown-menu">
-								<li><a href="faq.html">FAQ</a></li>
-								<li><a href="pricing-table.html">PRICING TABLE</a></li>
-								<li><a href="404page.html">404 PAGE</a></li>
-								<li><a href="career.html">CAREER</a></li>
+								<li><a href="faq.html">Faq</a></li>
+								<li><a href="pricing-table.html">Pricing Table</a></li>
+								<li><a href="404page.html">404 Page</a></li>
 							  </ul>
 							</li>
 							<li><a href="contact.html">CONTACT</a></li>
@@ -180,12 +195,12 @@
 				
 				<div class="col-sm-6 col-md-6">
 					<h3>What is Life Coaching?</h3>
-					<p>Life Coaching is a collaborative designed partnership between coach and client, where the coaching relationship continually gives all the power back to you, the client. I believe that you know the answers to every question or challenge you may have in your life, even if those answers appear to be obscured, concealed or hidden within you.  As a Life Coach, I call upon my coaching training and life experiences to know the right questions to ask and be able to provide the right tools and techniques to empower you to find those answers within yourself. I apply research-based techniques to help people develop more effective habits and work through your life challenges. </p> 
+					<p>Life Coaching is a collaborative designed partnership between coach and client, where the coaching relationship continually gives all the power back to you, the client. I believe that you know the answers to every question or challenge you may have in your life, even if those answers appear to be obscured, concealed or hidden within you. I apply research-based techniques to help people develop more effective habits and work through your life challenges. </p> 
 					<p>As your Life Coach, I will provide a supportive, objective, neutral and nonjudgmental environment that allows you to talk openly and freely and that promotes emotional healing.  I help people of all ages live happier, healthier and more productive lives.   </p>
 				</div>
 
 				<div class="col-sm-6 col-md-6">
-					<img src="images/welcome-img.jpg" alt="" class="img-responsive img-rounded">
+					<img src="images/service-img-1.jpg" alt="" class="img-responsive img-rounded">
 				</div>
 				
 			</div>
@@ -227,7 +242,7 @@
 						<div class="panel-heading" role="tab" id="heading1">
 						  <h4 class="panel-title">
 							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
-							  Certain pests can be very dangerous?
+							  Quisque dignissim vulputate purus in sodales?
 							</a>
 						  </h4>
 						</div>
@@ -241,7 +256,7 @@
 						<div class="panel-heading" role="tab" id="heading2">
 						  <h4 class="panel-title">
 							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
-							  We provide the 5 star protection plan guarantees you stay safe from pest without hassle?
+							  Nam porttitor aliquet eros bibendum blandit?
 							</a>
 						  </h4>
 						</div>
@@ -262,7 +277,7 @@
 						<div class="panel-heading" role="tab" id="heading3">
 						  <h4 class="panel-title">
 							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
-							  Schedule a Complimentary inspection of your Residential?
+							  Nullam non vehicula neque. Vivamus sed consectetur nunc. Proin eu tristique justo, id eleifend urna?
 							</a>
 						  </h4>
 						</div>
@@ -277,7 +292,7 @@
 						<div class="panel-heading" role="tab" id="heading4">
 						  <h4 class="panel-title">
 							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
-							  Don't worry we will help out you?
+							  Quisque feugiat non justo id porta?
 							</a>
 						  </h4>
 						</div>
@@ -499,7 +514,7 @@
 						<div class="spacer-30"></div>
 						<p>99 S.t Jomblo Park <br>Pekanbaru 28292. Indonesia<br>
  <br>
-hello@trainer.co  <br>
+info@trainer.com  <br>
 +1 301-736-4321</p>
 						<div class="footer-sosmed">
 							<a href="#" title="">
@@ -586,12 +601,10 @@ hello@trainer.co  <br>
 	<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/vendor/jquery.superslides.js"></script>
 	<script type="text/javascript" src="js/vendor/owl.carousel.js"></script>
-	<script type="text/javascript" src="js/vendor/bootstrap-hover-dropdown.min.js"></script>
+	<script type="text/javascript" src="js/vendor/bootstrap-dropdownhover.min.js"></script>
 	<script type="text/javascript" src="js/vendor/jquery.magnific-popup.min.js"></script>
-	<script type="text/javascript" src="js/vendor/easings.js"></script>
-	<script type="text/javascript" src="js/vendor/isotope.pkgd.min.js"></script>
 
-	<!-- sendmail -->
+	<!-- SENDMAIL -->
 	<script type="text/javascript" src="js/vendor/validator.min.js"></script>
 	<script type="text/javascript" src="js/vendor/form-scripts.js"></script>
 	

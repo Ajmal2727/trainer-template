@@ -201,6 +201,9 @@ dl.hiw{
 	background-color: $white;
 	@include border-radius(20px);
 	overflow: hidden;
+	&.style-2{
+		@include border-radius(20px 20px 0 0);
+	}
 	> .row {
 	    display: flex;
 	    flex-wrap: wrap;
@@ -212,7 +215,7 @@ dl.hiw{
 	    background-size: cover;
 	}
 	.wrap-form{
-		padding: 20px 40px 80px 20px;
+		padding: 20px 40px 60px 20px;
 	}
 }
 
@@ -220,12 +223,28 @@ dl.hiw{
 	margin-top: 60px;
 	.form-control {
 	    padding: 10px 0px;
-	    border-radius: 0;
+	    @include border-radius(0);
 	    background-color: transparent;
 	    border: 0;
 	    border-bottom: 1px solid #e1e2e4;
         -webkit-box-shadow: none;
     	box-shadow: none;
+	}
+	&.style-2{
+		margin-top: 20px;
+		.form-control {
+		    padding: 10px 12px;
+		    @include border-radius(10px);
+		    background-color: $white;
+		    border: 0;
+		    border-bottom: 1px solid #e1e2e4;
+	        -webkit-box-shadow: none;
+	    	box-shadow: none;
+    	    height: 45px;
+		}
+		textarea.form-control {
+		    height: auto;
+		}
 	}
 }
 
@@ -484,21 +503,19 @@ dl.hiw{
 	position: relative;
 	z-index: 2;
 }
-.feature-gutter
-{
+.col-0{
   margin-right: 0px;
   margin-left: 0px;
+  	& > [class^="col-"],
+	& > [class*=" col-"],
+	&[class*='col-'],
+	&[class*=" col-"]
+	{
+	  padding-right: 0;
+	  padding-left: 0;
+	}
 }
 
-.feature-gutter > [class^="col-"],
-.feature-gutter > [class*=" col-"],
-.feature-gutter[class*='col-'],
-.feature-gutter[class*=" col-"]
-{
-  padding-top:40px;
-  padding-right:40px;
-  padding-left:40px;
-}
 .border-right{
 	border-right: 1px solid #ccc;
 }

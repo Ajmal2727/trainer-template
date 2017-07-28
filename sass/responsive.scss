@@ -1,3 +1,14 @@
+@media (min-width: 1200px){
+	.list-events > .col-md-4:nth-child(3n+1){
+	    clear: both;
+	}
+	.row-3-reset > .col-md-4:nth-child(3n+1){
+	    clear: both;
+	}
+	.row-4-reset > .col-md-3:nth-child(4n+1){
+	    clear: both;
+	}
+}
 @media (max-width: 1024px) {
 	.slides-navigation a.prev{
 		left: -20px;

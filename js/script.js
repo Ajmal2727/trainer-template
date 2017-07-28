@@ -72,30 +72,6 @@ $(document).ready(function(){
 		);
 	});
 	
-	/* =================================
-	ISOTOPE
-	=================================== */
-	$(window).load(function(){
-		// INITIALIZE ISOTOPE
-		var $container = $('.grid-services');
-		$container.isotope({
-			filter: '*',
-		});
-	 	$('.portfolio_filter a').on('click', function() {
-	 		$('.portfolio_filter .active').removeClass('active');
-			$(this).addClass('active');
-	 
-			var selector = $(this).attr('data-filter');
-			$container.isotope({
-				filter: selector,
-				animationOptions: {
-					duration: 500,
-					animationEngine : "jquery"
-				}
-			});
-			return false;
-	 	});
-	});
 
 	/* =================================
 	OWL
@@ -108,59 +84,7 @@ $(document).ready(function(){
 		autoplayTimeout: 5000,
 		autoplayHoverPause: true,
 		loop: true,
-	});
-	
-	// var owl = $("#owl-testimony");
-	// owl.owlCarousel({
-	// 	autoplay: 5000,
-	// 	stopOnHover: true,
-	// 	items : 2,
-	// 	nav: true,
-	// 	navText: ["<span class='fa fa-chevron-left'></span>", "<span class='fa fa-chevron-right'></span>"],
-	// 	dots: true,
-	// 	loop: true,
-	// 	responsive:{
-	// 		0:{
-	// 			items:1
-	// 		},
-	// 		1000:{
-	// 			items:2
-	// 		}
-	// 	}
-	// });
-
-	var testimony2 = $("#owl-testimony");
-	testimony2.owlCarousel({
-		items: 1,
-		autoplay: true,
-		autoplayTimeout: 5000,
-		autoplayHoverPause: true,
-		navText: ["<span class='fa fa-chevron-left'></span>", "<span class='fa fa-chevron-right'></span>"],
-		dots: true,
-		loop: true
-	});
-
-	var project = $("#caro-project");
-	project.owlCarousel({
-		margin: 10,
-		items : 4,
-		nav: true,
-		navText: ["<span class='fa fa-chevron-left'></span>", "<span class='fa fa-chevron-right'></span>"],
-		dots: true,
-		loop: true,
-		responsive:{
-			0:{
-				items:1
-			},
-			768:{
-				items:2
-			},
-			1000:{
-				items:4
-			}
-		}
-	});
-
+	});	
 	var caro2 = $("#caro-2");
 	caro2.owlCarousel({
 		autoplay: true,
@@ -181,6 +105,25 @@ $(document).ready(function(){
 				items:3
 			}
 		}
+	});
+	var testimony = $("#owl-testimony");
+	testimony.owlCarousel({
+		items: 1,
+		autoplay: true,
+		autoplayTimeout: 5000,
+		autoplayHoverPause: true,
+		loop: true,
+	});
+	
+	var testimony2 = $("#owl-testimony2");
+	testimony2.owlCarousel({
+		items: 1,
+		autoplay: true,
+		autoplayTimeout: 5000,
+		autoplayHoverPause: true,
+		navText: ["<span class='fa fa-chevron-left'></span>", "<span class='fa fa-chevron-right'></span>"],
+		dots: true,
+		loop: true
 	});
 	
 	/* =================================
